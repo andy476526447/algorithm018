@@ -1,0 +1,431 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<ScappleDocument ID="429429D4-15E0-4189-AD53-3B0A693EAD49" Version="1.1">
+   <Notes>
+      <Note Width="44.9707" FontSize="12" ID="0" Position="41.4,782.4">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="0" Style="Rounded"/>
+         </Appearance>
+         <String>总览</String>
+         <ConnectedNoteIDs>1, 5-6, 10, 20, 33</ConnectedNoteIDs>
+      </Note>
+      <Note Width="138.843" FontSize="12" ID="1" Position="354.7,172.3">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="0" Style="Rounded"/>
+         </Appearance>
+         <String>训练营学习方法</String>
+         <ConnectedNoteIDs>0, 2-4</ConnectedNoteIDs>
+      </Note>
+      <Note Width="44.9707" FontSize="12" ID="2" Position="553.1,82.4">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="0" Style="Rounded"/>
+         </Appearance>
+         <String>预习</String>
+         <ConnectedNoteIDs>1</ConnectedNoteIDs>
+      </Note>
+      <Note Width="138.843" FontSize="12" ID="3" Position="507.8,145.7">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="0" Style="Rounded"/>
+         </Appearance>
+         <String>课堂思考、回答</String>
+         <ConnectedNoteIDs>1</ConnectedNoteIDs>
+      </Note>
+      <Note Width="120.068" FontSize="12" ID="4" Position="518.8,197.3">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="0" Style="Rounded"/>
+         </Appearance>
+         <String>课后切题作业</String>
+         <ConnectedNoteIDs>1</ConnectedNoteIDs>
+      </Note>
+      <Note Width="138.843" FontSize="12" ID="6" Position="363.3,340.2">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="0" Style="Rounded"/>
+         </Appearance>
+         <String>职业训练三步曲</String>
+         <ConnectedNoteIDs>0, 7-9</ConnectedNoteIDs>
+      </Note>
+      <Note Width="101.294" FontSize="12" ID="7" Position="543.8,284.0">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="0" Style="Rounded"/>
+         </Appearance>
+         <String>切碎知识点</String>
+         <ConnectedNoteIDs>6</ConnectedNoteIDs>
+      </Note>
+      <Note Width="82.5195" FontSize="12" ID="8" Position="542.2,341.0">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="0" Style="Rounded"/>
+         </Appearance>
+         <String>刻意练习</String>
+         <ConnectedNoteIDs>6</ConnectedNoteIDs>
+      </Note>
+      <Note Width="137.891" FontSize="12" ID="9" Position="551.6,400.4">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="0" Style="Rounded"/>
+         </Appearance>
+         <String>反馈(主动/被动)</String>
+         <ConnectedNoteIDs>6</ConnectedNoteIDs>
+      </Note>
+      <Note Width="138.843" FontSize="12" ID="10" Position="367.2,555.9">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="0" Style="Rounded"/>
+         </Appearance>
+         <String>数据结构三大块</String>
+         <ConnectedNoteIDs>0, 11-13</ConnectedNoteIDs>
+      </Note>
+      <Note Width="44.9707" FontSize="12" ID="11" Position="524.2,491.8">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="0" Style="Rounded"/>
+         </Appearance>
+         <String>一维</String>
+         <ConnectedNoteIDs>10, 14-15</ConnectedNoteIDs>
+      </Note>
+      <Note Width="44.9707" FontSize="12" ID="12" Position="525.8,555.1">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="0" Style="Rounded"/>
+         </Appearance>
+         <String>二维</String>
+         <ConnectedNoteIDs>10, 16-17</ConnectedNoteIDs>
+      </Note>
+      <Note Width="44.9707" FontSize="12" ID="13" Position="527.3,637.9">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="0" Style="Rounded"/>
+         </Appearance>
+         <String>三维</String>
+         <ConnectedNoteIDs>10, 18-19</ConnectedNoteIDs>
+      </Note>
+      <Note Width="248.438" FontSize="12" ID="14" Position="588.3,458.2">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="0" Style="Rounded"/>
+         </Appearance>
+         <String>基础：数组、字符串、链表</String>
+         <ConnectedNoteIDs>11</ConnectedNoteIDs>
+      </Note>
+      <Note Width="494.531" FontSize="12" ID="15" Position="572.7,511.3">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="0" Style="Rounded"/>
+         </Appearance>
+         <String>高级：栈、队列、双端队列、集合、映射(hash/map)等</String>
+         <ConnectedNoteIDs>11</ConnectedNoteIDs>
+      </Note>
+      <Note Width="106.543" FontSize="12" ID="16" Position="594.5,534.0">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="0" Style="Rounded"/>
+         </Appearance>
+         <String>基础:树、图</String>
+         <ConnectedNoteIDs>12</ConnectedNoteIDs>
+      </Note>
+      <Note Width="489.844" FontSize="12" ID="17" Position="596.1,579.3">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="0" Style="Rounded"/>
+         </Appearance>
+         <String>高级：二叉搜索树(红黑树、AVL)、堆、并查集、字典树等</String>
+         <ConnectedNoteIDs>12</ConnectedNoteIDs>
+      </Note>
+      <Note Width="175.781" FontSize="12" ID="18" Position="600.8,611.3">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="0" Style="Rounded"/>
+         </Appearance>
+         <String>位运算、布隆过滤器</String>
+         <ConnectedNoteIDs>13</ConnectedNoteIDs>
+      </Note>
+      <Note Width="107.654" FontSize="12" ID="19" Position="611.7,651.2">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="0" Style="Rounded"/>
+         </Appearance>
+         <String>LRU Cache</String>
+         <ConnectedNoteIDs>13</ConnectedNoteIDs>
+      </Note>
+      <Note Width="82.5195" FontSize="12" ID="20" Position="378.9,784.8">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="0" Style="Rounded"/>
+         </Appearance>
+         <String>算法类型</String>
+         <ConnectedNoteIDs>0, 21, 25</ConnectedNoteIDs>
+      </Note>
+      <Note Width="82.5195" FontSize="12" ID="21" Position="499.2,729.3">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="0" Style="Rounded"/>
+         </Appearance>
+         <String>三大基石</String>
+         <ConnectedNoteIDs>20, 22-24</ConnectedNoteIDs>
+      </Note>
+      <Note Width="173.438" FontSize="12" ID="22" Position="634.4,692.6">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="0" Style="Rounded"/>
+         </Appearance>
+         <String>if-else——>branch</String>
+         <ConnectedNoteIDs>21, 26</ConnectedNoteIDs>
+      </Note>
+      <Note Width="182.812" FontSize="12" ID="23" Position="635.2,728.5">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="0" Style="Rounded"/>
+         </Appearance>
+         <String>循环——>Interation</String>
+         <ConnectedNoteIDs>21, 26</ConnectedNoteIDs>
+      </Note>
+      <Note Width="44.9707" FontSize="12" ID="24" Position="639.1,766.0">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="0" Style="Rounded"/>
+         </Appearance>
+         <String>递归</String>
+         <ConnectedNoteIDs>21, 26</ConnectedNoteIDs>
+      </Note>
+      <Note Width="82.5195" FontSize="12" ID="25" Position="525.8,930.1">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="0" Style="Rounded"/>
+         </Appearance>
+         <String>高级算法</String>
+         <ConnectedNoteIDs>20, 27-32</ConnectedNoteIDs>
+      </Note>
+      <Note Width="221.875" FontSize="12" ID="26" Position="885.9,709.8">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="0" Style="Rounded"/>
+         </Appearance>
+         <String>任何高级的算法都可以转化为这三类最基础的算法</String>
+         <ConnectedNoteIDs>22-24</ConnectedNoteIDs>
+      </Note>
+      <Note Width="255.469" FontSize="12" ID="27" Position="633.6,813.7">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="0" Style="Rounded"/>
+         </Appearance>
+         <String>搜索——深度优先，广度优先</String>
+         <ConnectedNoteIDs>25</ConnectedNoteIDs>
+      </Note>
+      <Note Width="82.5195" FontSize="12" ID="28" Position="640.6,851.2">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="0" Style="Rounded"/>
+         </Appearance>
+         <String>动态规划</String>
+         <ConnectedNoteIDs>25</ConnectedNoteIDs>
+      </Note>
+      <Note Width="82.5195" FontSize="12" ID="29" Position="635.2,888.7">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="0" Style="Rounded"/>
+         </Appearance>
+         <String>二分查找</String>
+         <ConnectedNoteIDs>25</ConnectedNoteIDs>
+      </Note>
+      <Note Width="44.9707" FontSize="12" ID="30" Position="639.8,927.0">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="0" Style="Rounded"/>
+         </Appearance>
+         <String>贪心</String>
+         <ConnectedNoteIDs>25</ConnectedNoteIDs>
+      </Note>
+      <Note Width="44.9707" FontSize="12" ID="31" Position="645.8,960.5">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="0" Style="Rounded"/>
+         </Appearance>
+         <String>排序</String>
+         <ConnectedNoteIDs>25</ConnectedNoteIDs>
+      </Note>
+      <Note Width="101.294" FontSize="12" ID="32" Position="650.0,1002.0">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="0" Style="Rounded"/>
+         </Appearance>
+         <String>数学、几何</String>
+         <ConnectedNoteIDs>25</ConnectedNoteIDs>
+      </Note>
+      <Note Width="101.294" FontSize="12" ID="5" Position="371.1,1122.3">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="0" Style="Rounded"/>
+         </Appearance>
+         <String>切题四件套</String>
+         <ConnectedNoteIDs>0, 34-37</ConnectedNoteIDs>
+      </Note>
+      <Note Width="130.566" FontSize="12" ID="33" Position="341.4,1308.2">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="0" Style="Rounded"/>
+         </Appearance>
+         <String>    五毒神掌
+（5遍刷题法）</String>
+         <ConnectedNoteIDs>0, 38-42</ConnectedNoteIDs>
+      </Note>
+      <Note Width="274.219" FontSize="12" ID="34" Position="531.2,1047.3">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="0" Style="Rounded"/>
+         </Appearance>
+         <String>搞清楚题目，以免题目搞错</String>
+         <ConnectedNoteIDs>5</ConnectedNoteIDs>
+      </Note>
+      <Note Width="442.188" FontSize="12" ID="35" Position="536.7,1100.4">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="0" Style="Rounded"/>
+         </Appearance>
+         <String>思考可能的思路，比较复杂度，找一种性能更好的</String>
+         <ConnectedNoteIDs>5</ConnectedNoteIDs>
+      </Note>
+      <Note Width="44.9707" FontSize="12" ID="36" Position="539.8,1139.5">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="0" Style="Rounded"/>
+         </Appearance>
+         <String>编码</String>
+         <ConnectedNoteIDs>5</ConnectedNoteIDs>
+      </Note>
+      <Note Width="184.375" FontSize="12" ID="37" Position="539.1,1182.4">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="0" Style="Rounded"/>
+         </Appearance>
+         <String>多测试几组测试用例</String>
+         <ConnectedNoteIDs>5</ConnectedNoteIDs>
+      </Note>
+      <Note Width="101.294" FontSize="12" ID="38" Position="519.5,1232.4">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="0" Style="Rounded"/>
+         </Appearance>
+         <String>第一遍刷题</String>
+         <ConnectedNoteIDs>33, 43</ConnectedNoteIDs>
+      </Note>
+      <Note Width="101.294" FontSize="12" ID="39" Position="518.0,1277.7">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="0" Style="Rounded"/>
+         </Appearance>
+         <String>第二遍刷题</String>
+         <ConnectedNoteIDs>33, 44</ConnectedNoteIDs>
+      </Note>
+      <Note Width="101.294" FontSize="12" ID="40" Position="517.2,1322.3">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="0" Style="Rounded"/>
+         </Appearance>
+         <String>第三遍刷题</String>
+         <ConnectedNoteIDs>33, 45</ConnectedNoteIDs>
+      </Note>
+      <Note Width="101.294" FontSize="12" ID="41" Position="514.1,1365.2">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="0" Style="Rounded"/>
+         </Appearance>
+         <String>第四遍刷题</String>
+         <ConnectedNoteIDs>33, 46</ConnectedNoteIDs>
+      </Note>
+      <Note Width="101.294" FontSize="12" ID="42" Position="518.8,1409.0">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="0" Style="Rounded"/>
+         </Appearance>
+         <String>第五遍刷题</String>
+         <ConnectedNoteIDs>33, 47</ConnectedNoteIDs>
+      </Note>
+      <Note Width="474.219" FontSize="12" ID="43" Position="660.9,1227.0">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="0" Style="Rounded"/>
+         </Appearance>
+         <String>5~10分钟思考，没有思路就看题解，注意比较多种解法</String>
+         <ConnectedNoteIDs>38</ConnectedNoteIDs>
+      </Note>
+      <Note Width="655.469" FontSize="12" ID="44" Position="657.8,1273.0">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="0" Style="Rounded"/>
+         </Appearance>
+         <String>马上自己写一遍，在LeeCode上调试通过并提交，多种解法比较、体会、优化</String>
+         <ConnectedNoteIDs>39</ConnectedNoteIDs>
+      </Note>
+      <Note Width="379.688" FontSize="12" ID="45" Position="663.3,1318.4">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="0" Style="Rounded"/>
+         </Appearance>
+         <String>24小时后再刷一遍，不熟的再针对性练习</String>
+         <ConnectedNoteIDs>40</ConnectedNoteIDs>
+      </Note>
+      <Note Width="340.625" FontSize="12" ID="46" Position="661.7,1362.1">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="0" Style="Rounded"/>
+         </Appearance>
+         <String>一周后再刷一遍，不熟的再针对性练习</String>
+         <ConnectedNoteIDs>41</ConnectedNoteIDs>
+      </Note>
+      <Note Width="258.594" FontSize="12" ID="47" Position="667.2,1407.4">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="0" Style="Rounded"/>
+         </Appearance>
+         <String>面试前再刷一遍，恢复性练习</String>
+         <ConnectedNoteIDs>42</ConnectedNoteIDs>
+      </Note>
+   </Notes>
+   <BackgroundShapes/>
+   <NoteStyles>
+      <Style AffectFontStyle="No" AffectAlignment="No" Name="Green Bubble" ID="F7ED3259-96A2-4546-94C6-CC34C9A3A531" AffectTextColor="No" AffectNoteBody="Yes" AffectSticky="No" AffectSize="No" AffectFade="No">
+         <BorderThickness>1</BorderThickness>
+         <BorderColor>0.399100 0.583322 0.354864</BorderColor>
+         <FillColor>0.808835 0.872419 0.801343</FillColor>
+      </Style>
+      <Style AffectFontStyle="No" AffectAlignment="No" Name="Yellow Bubble" ID="186BA188-598A-452E-8908-43FE70CEFD2F" AffectTextColor="No" AffectNoteBody="Yes" AffectSticky="No" AffectSize="No" AffectFade="No">
+         <BorderThickness>1</BorderThickness>
+         <BorderColor>0.769436 0.762219 0.390143</BorderColor>
+         <FillColor>0.912963 0.894118 0.644541</FillColor>
+      </Style>
+      <Style AffectFontStyle="No" AffectAlignment="No" Name="Brown Bubble" ID="9033610B-06D5-4950-832C-3A3B99698EC5" AffectTextColor="No" AffectNoteBody="Yes" AffectSticky="No" AffectSize="No" AffectFade="No">
+         <BorderThickness>1</BorderThickness>
+         <BorderColor>0.269490 0.164034 0.186694</BorderColor>
+         <FillColor>0.934157 0.888319 0.785290</FillColor>
+      </Style>
+      <Style AffectFontStyle="No" AffectAlignment="No" Name="Red Text" ID="C60CE952-AB17-4267-88E2-22F14E9128B5" AffectTextColor="Yes" AffectNoteBody="No" AffectSticky="No" AffectSize="No" AffectFade="No">
+         <TextColor>1.0 0.0 0.0</TextColor>
+      </Style>
+      <Style AffectFontStyle="Yes" AffectAlignment="Yes" Name="Title Text" ID="B417C074-A1F2-4883-AC7F-BDB43640B151" AffectTextColor="No" AffectNoteBody="No" AffectSticky="No" AffectSize="No" AffectFade="No">
+         <IsBold>Yes</IsBold>
+         <FontSize>12.0</FontSize>
+      </Style>
+      <Style AffectFontStyle="No" AffectAlignment="No" Name="Pink Bubble" ID="1A5FEAD4-FBD9-4453-8158-7D13AAFABFA2" AffectTextColor="No" AffectNoteBody="Yes" AffectSticky="No" AffectSize="No" AffectFade="No">
+         <BorderThickness>1</BorderThickness>
+         <BorderColor>0.690303 0.407263 0.550912</BorderColor>
+         <FillColor>0.898329 0.817472 0.865339</FillColor>
+      </Style>
+      <Style AffectFontStyle="No" AffectAlignment="No" Name="Blue Bubble" ID="32FE175D-7E4E-477C-9DFC-A5DA3BD5612B" AffectTextColor="No" AffectNoteBody="Yes" AffectSticky="No" AffectSize="No" AffectFade="No">
+         <BorderThickness>1</BorderThickness>
+         <BorderColor>0.485893 0.568933 0.756207</BorderColor>
+         <FillColor>0.844068 0.869596 0.923064</FillColor>
+      </Style>
+   </NoteStyles>
+   <UISettings>
+      <BackgroundColor>1.0 0.988006 0.945006</BackgroundColor>
+      <DefaultFont>Helvetica</DefaultFont>
+      <DefaultTextColor>0.0 0.0 0.0</DefaultTextColor>
+   </UISettings>
+   <PrintSettings VerticalPagination="Auto" HorizontalPagination="Clip" Orientation="Portrait" RightMargin="12.000000" BottomMargin="12.000000" HorizontallyCentered="Yes" ScaleFactor="1.000000" PagesAcross="1" PaperType="iso-a4" PagesDown="1" TopMargin="12.000000" Collates="Yes" PaperSize="-1.000000,-1.000000" LeftMargin="12.000000" VerticallyCentered="Yes"/>
+</ScappleDocument>
