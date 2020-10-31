@@ -206,3 +206,99 @@
   2、DFS
     迭代方式、递归方式，都维护一个set来保存已经访问过的节点，在输出节点时保存到set中，在添加节点时添加去重操作即可。
 
+五、HashMap总结
+  1、底层数据结构
+    HashMap在jdk1.7及之前的版本中，由数组+链表的结构实现，从jdk1.8开始，由数组+链表+红黑树的结构实现，这里在jdk1.8的基础上探讨HashMap。
+	源码中维护了一个数组：
+	transient Node<K,V>[] table;
+	static class Node<K,V> implements Map.Entry<K,V> {
+        final int hash;
+        final K key;
+        V value;
+        Node<K,V> next;
+	}
+	这个数组存储的Node，就包含了我们put时的K与V，K的hash值，以及指向下一个节点的指针next。数组中查询节点的时间复杂度是O(1)，但是插入、删除的时间
+	复杂度是O(n)，所以执行插入和删除操作比较耗时。HashMap中加入链表结构来解决这个问题。我们知道，解决hash冲突的一般方法有：开发地址法、二次hash法、
+	拉链法等，这里采用的就是拉链法，也就是这里的数组+链表结构了。查找元素时，最好的情况是就在数组中，时间复杂度为O(1)，最坏的情况是在链表的末尾，
+	时间复杂度是O(n)(当然，由于HashMap的扩容机制和良好的hash算法，hash冲突发生得比较少)；插入和删除的时间复杂度就变成了O(1)了。
+	jdk1.8加入了红黑树，当链表的长度达到8的时候就会由链表升维为红黑树，当红黑树减少到6时又由红黑树降到链表。这里需要补充一点的是，红黑树的节点占用
+	的空间比链表要大，维护红黑树的空间成本比较大，但操作方便；而链表正好相反，所以这里的8和6是一个平衡的值。在链表转为红黑树时，还会判断当前的Entry
+	的数量是否小于64，小于64时会扩容，减少hash冲突，生成红黑树的可能性就小了很多。可见，只有当数量比较多时，维护红黑树的效率才比较明显。
+	红黑树的节点如下，实际上也Node的子类：
+	static final class TreeNode<K,V> extends LinkedHashMap.LinkedHashMapEntry<K,V> {
+        TreeNode<K,V> parent;  // red-black tree links
+        TreeNode<K,V> left;
+        TreeNode<K,V> right;
+        TreeNode<K,V> prev;    // needed to unlink next upon deletion
+        boolean red;
+	}
+	
+  2、构造函数的选择
+    HashMap提供了4个构造函数，实际工作中可能会用到下面3个：
+    public HashMap() {
+        this.loadFactor = DEFAULT_LOAD_FACTOR; // all other fields defaulted
+    }
+	public HashMap(int initialCapacity) {
+        this(initialCapacity, DEFAULT_LOAD_FACTOR);
+    }
+	public HashMap(Map<? extends K, ? extends V> m) {
+        this.loadFactor = DEFAULT_LOAD_FACTOR;
+        putMapEntries(m, false);
+    }
+	这三个构造函数都使用了默认的扩容因子，
+    static final float DEFAULT_LOAD_FACTOR = 0.75f;
+	其值为0.75，当HashMap当前使用率达到整个容量(capacity)的75%时就会扩容。第一个构造函数使用得最频繁，会分配默认大小的容量：
+	static final int DEFAULT_INITIAL_CAPACITY = 1 << 4;
+	第二个构造函数会指定初始容量，指定容量后通过计算，会分配比该初始值大的最近的2的n次方大小的容量，比如传入的initialCapacity为12，
+	实际上会分配16的容量，最大能分配的容量为；
+	static final int MAXIMUM_CAPACITY = 1 << 30;
+	第三个可以用于复制指定的HashMap。
+	由于扩容需要执行不少操作，所以肯定是会占用一些资源的，如果平时开发比较明确需要使用多少容量，最好使用第二个，可以避免频繁扩容影响性能。
+	
+  3、元素的插入
+     插入元素的方法是put(K,V),其基本步骤是：
+	（1）根据Key算出hash值，(n-1)&hash来确定其在数组中的index(这里的n表示数组的长度)
+	（2）如果数组的这个index位置为空，则直接插入，时间复杂度是O(1)，如果达到扩容条件还会扩容。
+	（3）如果数组的这个index已经有值了，那就依次遍历，比价Key来判断是否已经存在，存在就修改该节点的Value，不存在就新建节点并插在链尾。
+	     如果链表长度达到了8，此时会升维形成红黑树。如果还在链表阶段，时间复杂度是O(1)+O(k)，这里O(1)是插入，O(k)是遍历，由于不会超过8，
+		 所以也可以认为是O(1)。在形成红黑树时，还会判断容量是否小于64，如果是，会扩容。
+    （4）在第3步中，可能插入前已经是红黑树了，那就在红黑树中先查找是否存在，存在则修改，不存在则新建并插入。这样，时间复杂度是O(l)+O(logK)。
+	 所以综合来看，可以理解为插入一个元素时时间复杂度最好是O(1),最坏是O(logn)
+  
+  4、获取元素
+     获取元素的方法是get(K),基本步骤是：
+	（1）根据Key的hash值确定其在数组中的index。
+	（2）先判断数组的这个地方是否有节点，没有则返回null。
+	（3）如果有，则根据hash和Key判断第一个节点是否为目标节点，是则返回其Value。否则继续判断，根据第一个节点是TreeNode实例来判断当前是链表还是红黑树。
+	     同样根据hash值和Key来确定是否存在，存在则返回Value，否则返回null。
+     所以时间复杂度也和插入时类似，最好时是O(1),最坏时是O(logn)。
+	
+  5、删除元素
+     删除元素的方法是remove(K),先和获取元素一样查找该节点，删除，然后调整结构。
+
+  6、Key为null时的处理
+     HashMap的K和V均可以为null，当Key为null时有，其hash值定为0；
+	 public V put(K key, V value) {
+        return putVal(hash(key), key, value, false, true);
+     }
+	 static final int hash(Object key) {
+        int h;
+        return (key == null) ? 0 : (h = key.hashCode()) ^ (h >>> 16);
+     }
+  
+  7、做算法题时常用的方法
+    Map<Object, Object> map = new HashMap<>();
+    map.put(K,V); //存取KV对
+	map.get(K); //如果不存在，则返回null
+	map.getOrDefault(K,defaultValue); //相比get方法，会得到设定的默认值defaultValue。该方法很有用
+	map.entrySet(); //获取所有KV对的实体Set，其元素类型为Map.Entry<K, V>。HashMap中的Node，TreeNode都是其子类。
+	map.keySet(); //获取Key的集合Set
+	map.values(); //获取value的集合Collection,区别于Set
+	map.containsKey(K); //判断是否包含指定Key的Entry
+    map.containsValue(V); //判断是否包含指定Value的Entry
+	map.remove(K); //删除指定Key的Entry
+	map.putAll(otherMap); //复制给定的map
+	map.size(); //Entry的数量
+    map.clear(); //清除所有Entry
+    map.isEmpty(); //判断是否为空
+	
